@@ -1,0 +1,30 @@
+$yellow: #fdef00;
+$grey: #A1A1A1;
+$black: #000;
+$white-dark: #F9F9F9;
+$blue: #215469;
+$red: #E25043;
+
+.box {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.blue {
+    background: $blue;
+  }
+}
+
+.box1 {
+  background: url("../assets/images/flower.webp") center/cover;
+}
+
+.box2 {
+  background: url("../assets/images/sky.webp") center/cover;
+}
+
+.box3 {
+  background: url("../assets/images/snow.webp") center/cover;
+}
