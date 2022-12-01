@@ -6,9 +6,10 @@ module.exports = {
     },
     parserOptions: {
         ecmaVersion: 6,
-        sourceType: "module"
+        sourceType: "module",
+        parser: 'babel-eslint'
     },
-    rule: {
+    rules: {
         'no-var': 2
     }
 }
