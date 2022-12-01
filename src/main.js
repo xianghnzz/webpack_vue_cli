@@ -7,3 +7,4 @@ const num = count(2, 1);
 const plus = sum(1, 2, 3, 4, 5);
 console.log(num, 'num');
 console.log(plus, 'plus');
+var a = 1;

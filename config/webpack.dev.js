@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const ESLintPlugin = require('eslint-webpack-plugin');
+
 module.exports = {
     // 入口文件
     entry: './src/main.js',
@@ -73,6 +75,9 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: 'static/css/style.css'
+        }),
+        new ESLintPlugin({
+            context: path.resolve(__dirname, 'src')
         })
     ],
     // 模式

@@ -2,6 +2,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const ESLintPlugin = require('eslint-webpack-plugin');
+
 module.exports = {
     // 入口文件
     entry: './src/main.js',
@@ -82,6 +84,9 @@ module.exports = {
             filename: 'static/css/style.css'
         }),
         // new CssMinimizerPlugin()  也可以在这里开启css压缩
+        new ESLintPlugin({
+            context: path.resolve(__dirname, 'src')
+        })
     ],
     // 模式
     mode: 'production',
