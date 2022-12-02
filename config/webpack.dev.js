@@ -80,6 +80,11 @@ module.exports = {
             context: path.resolve(__dirname, 'src')
         })
     ],
+    // optimization: {
+    //     splitChunks: {
+    //         chunks: "all"
+    //     }
+    // },
     // 模式
     mode: 'development',
     // 开发服务

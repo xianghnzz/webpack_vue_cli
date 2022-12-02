@@ -35,5 +35,8 @@
     "last 2 version",
     ">0.2%",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "eslint-plugin-import": "^2.26.0"
+  }
 }

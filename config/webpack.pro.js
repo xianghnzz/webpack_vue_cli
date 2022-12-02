@@ -73,7 +73,10 @@ module.exports = {
         minimizer: [
             `...`, // 注意需要加上扩展符,不然影响 js压缩
             new CssMinimizerPlugin()
-        ]
+        ],
+        splitChunks: {
+            chunks: "all"
+        }
     },
     // 插件
     plugins: [
